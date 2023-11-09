@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=sawap'); /* ESSA URL IMPORTA A FONTE POPPINS DO GOOGLE*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #eaeaea;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: goldenrod;
+}
+
+.barra-nav a {
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+}
+
+.barra-nav a:hover,
+.barra-nav a.ativo {
+color: goldenrod;
+
+}
+
+.rede-social {
+    display:  flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    
+}
+
+.rede-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.rede-social a:hover {
+    border-color: goldenrod;
+
+}
+
+.rede-social a i {
+    font-size: 24px;
+    color: goldenrod;
+    transform: rotate(-45deg);
+
+}
+
+.principal {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8% 0;
+    overflow: hidden;
+        
+}
+
+.conteudo-principal {
+    max-width: 630px;
+}
+
+.conteudo-principal h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.conteudo-principal h3 {
+    font-size: 40px;
+    color: goldenrod;
+}
+
+.conteudo-principal p {
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+
+.principal-img {
+    position: relative;
+    right: -35%;
+    bottom: -50px;
+    width: 550px;
+    height: 550px;
+    transform: rotate(45deg);
+}
+
+.principal-img .losango {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eaeaea;
+    border: 25px solid goldenrod;
+}
+
+.principal-img .losango img {
+    position: absolute;
+    top: -20px;
+    left: -250px;
+    max-width: 800px;
+    transform: rotate(-50deg);
+}
+
+.principal-img2 {
+    position: relative;
+    right: 10%;
+    bottom: 17px;
+    width: 550px;
+    height: 550px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.principal-img2 .losango2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: eaeaea;
+    border: 25px solid black;
+    
+}
+
+.losango3 {
+    position: absolute;
+    top: -25%;
+    right:-15%;
+    width: 700px;
+    height: 700px;
+    background: black;
+    transform: rotate(45deg);
+    z-index: -1;
+}
